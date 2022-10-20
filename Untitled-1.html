@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> HTML for lists</h2>
+    <mark> Start Tags</mark>
+    <pre> unorded list is wirtten like &lt;ul&gt;(start tag) &lt;li&gt; (each list item starts with this tag)
+
+ orded list is written like &lt;ol&gt; (start tag) &lt;li&gt; (each list item starts with this tag)
+
+ description list is written like &lt;dl&gt; (defines the description list) &lt;dt&gt;((defines the term/name) &lt;dd&gt;(describes each term)
+    </pre>
+
+    <h2> CSS for lists </h2>
+    <mark> Make bullet a square</mark>
+    <pre> code in css
+     ul.a {
+        list-style-type: square;
+      }</pre>
+      <ul>
+        <li class="square"> Coffee</li>
+        <li class="square"> Milk</li>
+        <li class="square"> Tea</li>
+      </ul>
+    <mark>Make bullet an image named "my-bullet.png"</mark>
+    <pre> code in CSS
+        .picture{
+            list-style-type: url('my-bullet.png');
+        }
+    </pre>
+    <ul>
+        <li class="pictrue"> Coffee</li>
+        <li class="pictrue"> Milk</li>
+        <li class="pictrue"> Tea</li>
+    </ul>
+    <mark> Make bullet an uppercase roman number</mark>
+    <pre>  code in CSS
+        .roman{
+        list-style-type: upper-roman;
+    }</pre>
+    <ul>
+        <li class="roman"> Coffee</li>
+        <li class="roman"> Milk</li>
+        <li class="roman"> Tea</li>
+    </ul>
+    <mark> Set bullet position to be inside the list item's text flow</mark>
+    <pre> code in CSS
+        .inside{
+            list-style-position: inside;
+        }
+    </pre>
+    <ul>
+        <li class="inside"> Coffee     ,,,,,, <br> ,,,,,,</li>
+        <li class="inside"> Milk</li>
+        <li class="inside"> Tea</li>
+    </ul>
+    <mark> Set bullet position to be outside the list item's text flow</mark>
+    <pre> code in CSS
+        .outside
+            list-style-position: outside;
+        }
+    </pre>
+    <ul>
+        <li class="outside"> Coffee     ,,,,,, <br> ,,,,,,</li>
+        <li class="outside"> Milk</li>
+        <li class="outside"> Tea</li>
+    </ul>
+    <h2> HTML for tables</h2>
+    <mark> start tags</mark>
+    <pre> table => &lt;table&gt;
+          table row => &lt;tr&gt;
+          table header => &lt;thead&gt;
+          table header cell => &lt;th&gt;
+          table body => &lt;tbody&gt;
+          table cell => &lt;td&gt;
+          table footer => &lt;tfoot&gt;
+          table footer cell => &lt;tfoot&gt;
+
+          code example:
+          &lt;table style="width:100%"&gt;
+            &lt;tr&gt;
+            &lt;th&gt;Person 1&lt;/th&gt;
+            &lt;th&gt;Person 2&lt;/th&gt;
+            &lt;th&gt;Person 3&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+            &lt;td&gt;Emil&lt;/td&gt;
+            &lt;td&gt;Tobias&lt;/td&gt;
+            &lt;td&gt;Linus&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+            &lt;td&gt;16&lt;/td&gt;
+            &lt;td&gt;14&lt;/td&gt;
+            &lt;td&gt;10&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/table&gt;  
+    </pre>
+    <table style="width:100%">
+        <tr>
+          <th>Person 1</th>
+          <th>Person 2</th>
+          <th>Person 3</th>
+        </tr>
+        <tr>
+          <td>Thomas</td>
+          <td>Lukas</td>
+          <td>Mohamad</td>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td>12</td>
+          <td>16</td>
+        </tr>
+    </table>
+    <h2> css for tables</h2>
+    <mark> balck dotted border of 1 px width</mark>
+    <pre> code in CSS
+        table, th, td{
+            border: 1px solid black;
+            border-style: dotted;
+        }
+    </pre>
+    <table class="dotted"> 
+        <tr>
+            <th> Name</th>
+            <th> Age</th>
+        </tr>
+        <tr>
+        <td> Moritz</td>
+        <td> 15</td>
+        </tr>
+        <tr>
+            <td> Nikola</td>
+            <td> 16</td>
+        </tr>
+    </table>
+    <mark> Solid border of 1 px width having a red color and rounded corners</mark>
+    <pre> code in CSS
+        .red{
+            border: 1px solid;
+            border-color: red;
+            border-radius: 5px;
+        }
+    </pre>
+    <table class="red">
+        <tr>
+          <th>Person 1</th>
+          <th>Person 2</th>
+          <th>Person 3</th>
+        </tr>
+        <tr>
+          <td>Emil</td>
+          <td>Tobias</td>
+          <td>Linus</td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td>14</td>
+          <td>10</td>
+        </tr>
+    </table>
+    <mark> Merge the borders of table cells so that they appear as one line</mark>
+    <pre>code in CSS
+        .collapse{
+            border-collapse: collapse;
+        }
+    </pre>
+    <table class="collapse">
+        <tr>
+          <th>Person 1</th>
+          <th>Person 2</th>
+          <th>Person 3</th>
+        </tr>
+        <tr>
+          <td>Emil</td>
+          <td>Tobias</td>
+          <td>Linus</td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td>14</td>
+          <td>10</td>
+        </tr>
+    </table>  
+</body>
+</html>
